@@ -13,7 +13,7 @@ interface RunOption {
 export class ServerApp {
 
     static run({base,limit,showTable,fileDestination,fileName}:RunOption){
-        console.log('Server running');
+        console.log('Server running...');
 
         const table = new CreateTable().execute({base,limit});
         const wasCreated = new SaveFile()
@@ -25,6 +25,7 @@ export class ServerApp {
         });
 
         if(showTable) console.log(table);
+
 
         (wasCreated) ? console.log('File created!'): console.log('File not created!');
     }

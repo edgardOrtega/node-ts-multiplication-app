@@ -6,6 +6,7 @@ import { ServerApp } from "./presentation/server-app";
 
 //console.log( yarg.b );
 
+//funcion asincrona automato invocada
 (async() =>{
     //console.log('Ejecutado');
     await main();
